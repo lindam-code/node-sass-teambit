@@ -1,0 +1,21 @@
+header {
+  nav {
+    height: 70px;
+    border-bottom: 1px solid $text_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu {
+      display: flex;
+      li {
+        padding-right: 15px;
+        font-weight: bold;
+      }
+      .signUp {
+        background-color: $color_button_signUp;
+        border: 1px solid $secondary_color;
+        color: $secondary_color;
+      }
+    }
+  }
+}

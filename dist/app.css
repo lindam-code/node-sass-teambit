@@ -1,9 +1,63 @@
-h1,
-p {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: red;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2c4792;
+}
+
+.button img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+header nav {
+  height: 70px;
+  border-bottom: 1px solid #58402c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .menu {
+  display: flex;
+}
+
+header nav .menu li {
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+header nav .menu .signUp {
+  background-color: #5b70aa;
+  border: 1px solid #2c4792;
+  color: #2c4792;
 }
 
