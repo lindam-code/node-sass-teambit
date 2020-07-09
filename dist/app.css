@@ -94,3 +94,37 @@ header nav .menu .signUp {
   display: inline-block;
 }
 
+.people {
+  background-color: #fee7d1;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.people_section.first {
+  border-bottom: 1px solid #58402c;
+  margin-bottom: 25px;
+}
+
+.people_section {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.people_section > div {
+  padding: 50px;
+  flex-basis: calc(100% / 3);
+}
+
+.people_section > div > div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.people_section > div #safe-image > img {
+  width: 50%;
+}
+

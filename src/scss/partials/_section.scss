@@ -1,0 +1,30 @@
+.people {
+  background-color: $primary_color;
+  text-align: center;
+  padding: 25px 0;
+
+  &_section.first {
+    border-bottom: 1px solid $text_color;
+    margin-bottom: 25px;
+  }
+
+  &_section {
+    @include container;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > div {
+      padding: 50px;
+      flex-basis: calc(100% / 3);
+      & > div {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+      }
+      #safe-image > img {
+        width: 50%;
+      }
+    }
+  }
+}
