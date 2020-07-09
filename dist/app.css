@@ -23,11 +23,6 @@ img {
   width: 100%;
 }
 
-.container {
-  width: 70%;
-  margin: auto;
-}
-
 .button {
   padding: 10px;
   border-radius: 5px;
@@ -38,6 +33,11 @@ img {
 .button img {
   width: 30px;
   vertical-align: middle;
+}
+
+header {
+  width: 70%;
+  margin: auto;
 }
 
 header nav {
@@ -65,6 +65,8 @@ header nav .menu .signUp {
 
 .jumbotron {
   display: flex;
+  width: 70%;
+  margin: auto;
 }
 
 .jumbotron > div {

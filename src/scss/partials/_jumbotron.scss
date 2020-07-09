@@ -1,5 +1,6 @@
 .jumbotron {
   display: flex;
+  @include container;
   & > div {
     flex-basis: 50%;
     padding: 50px 0;
