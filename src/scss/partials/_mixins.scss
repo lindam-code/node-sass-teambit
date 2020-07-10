@@ -1,5 +1,6 @@
-// Contenitore che accentra 
+// Contenitore che accentra
 @mixin container {
-  width: 70%;
+  max-width: 80%;
+  min-width: 480px;
   margin: auto;
 }
