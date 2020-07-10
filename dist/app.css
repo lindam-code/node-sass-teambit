@@ -117,12 +117,17 @@ header nav .menu .signUp {
   min-width: 480px;
   margin: auto;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .people_section > div {
   padding: 50px;
   flex-basis: calc(100% / 3);
+}
+@media screen and (max-width: 992px) {
+  .people_section > div {
+    flex-basis: calc(100%);
+  }
 }
 .people_section > div > div {
   width: 200px;

@@ -11,12 +11,15 @@
   &_section {
     @include container;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 
     & > div {
       padding: 50px;
       flex-basis: calc(100% / 3);
+      @media screen and (max-width: 992px){
+        flex-basis: calc(100%);
+      }
       & > div {
         width: 200px;
         height: 200px;
