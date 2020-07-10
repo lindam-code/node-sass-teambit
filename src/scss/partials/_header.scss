@@ -5,6 +5,7 @@ header {
   align-items: center;
   height: 70px;
   border-bottom: 1px solid $text_color;
+  position: relative;
   nav {
     .menu {
       display: flex;
@@ -25,6 +26,9 @@ header {
     #burgher-menu {
       font-size: 50px;
       display: none;
+      &:hover {
+        cursor: pointer;
+      }
       @media screen and (max-width: 992px) {
         display: inline-block;
       }
@@ -45,5 +49,22 @@ header {
     .show {
       display: block;
     }
+  }
+  .burgher-drop-down {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 73px;
+    background-color: white;
+    li {
+      line-height: 25px;
+    }
+    .signUp {
+      display: block;
+      text-align: center;
+    }
+  }
+  .show {
+    display: block;
   }
 }

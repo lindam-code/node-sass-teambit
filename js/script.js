@@ -7,4 +7,9 @@ $(document).ready(function(){
   $('#solution-dropdown').click(function(){
     $('.drop-down').toggleClass('show');
   });
+  // Cliccando sul'icona burgher menu apro e chiudo il menu dropdown
+  $('#burgher-menu').click(function(){
+    $('.burgher-drop-down').toggleClass('show');
+  });
+
 });

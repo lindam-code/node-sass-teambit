@@ -43,6 +43,7 @@ header {
   align-items: center;
   height: 70px;
   border-bottom: 1px solid #58402c;
+  position: relative;
 }
 header nav .menu {
   display: flex;
@@ -66,6 +67,9 @@ header nav #burgher-menu {
   font-size: 50px;
   display: none;
 }
+header nav #burgher-menu:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 992px) {
   header nav #burgher-menu {
     display: inline-block;
@@ -85,6 +89,23 @@ header nav .drop-down li {
   line-height: 25px;
 }
 header nav .show {
+  display: block;
+}
+header .burgher-drop-down {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 73px;
+  background-color: white;
+}
+header .burgher-drop-down li {
+  line-height: 25px;
+}
+header .burgher-drop-down .signUp {
+  display: block;
+  text-align: center;
+}
+header .show {
   display: block;
 }
 
