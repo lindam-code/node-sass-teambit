@@ -50,6 +50,7 @@ header nav .menu {
 header nav .menu li {
   padding-right: 15px;
   font-weight: bold;
+  position: relative;
 }
 header nav .menu .signUp {
   background-color: #5b70aa;
@@ -69,6 +70,22 @@ header nav #burgher-menu {
   header nav #burgher-menu {
     display: inline-block;
   }
+}
+header nav .drop-down {
+  position: absolute;
+  top: 30px;
+  left: -7px;
+  background-color: white;
+  border: 1px solid #58402c;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+header nav .drop-down li {
+  line-height: 25px;
+}
+header nav .show {
+  display: block;
 }
 
 .jumbotron {

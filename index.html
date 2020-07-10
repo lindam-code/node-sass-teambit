@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="dist/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Inizio header -->
@@ -15,19 +16,21 @@
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="#">Solution<i class="fas fa-chevron-down"></i></a></li>
+          <li>
+            <a href="#">Solution<i class="fas fa-chevron-down" id="solution-dropdown"></i></a>
+            <ul class="drop-down">
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Surveys</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Praise</a></li>
+            </ul>
+          </li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Sign In</a></li>
           <li><a href="#" class="button signUp"><img src="img/google-logo.svg" alt="google logo">Sign Up</a></li>
         </ul>
         <i class="fa fa-bars" aria-hidden="true" id="burgher-menu"></i>
-        <!-- <ul class='drop-down'>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Surveys</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Praise</a></li>
-        </ul> -->
       </nav>
     </header>
     <!-- Fine header -->
@@ -116,7 +119,8 @@
     </footer>
     <!-- Inizio footer -->
 
-
+  <!-- Script javascript -->
+  <script src="js/script.js"></script>
 
   </body>
 </html>
