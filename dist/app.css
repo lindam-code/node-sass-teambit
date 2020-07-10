@@ -38,13 +38,11 @@ header {
   max-width: 80%;
   min-width: 480px;
   margin: auto;
-}
-header nav {
-  height: 70px;
-  border-bottom: 1px solid #58402c;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
+  border-bottom: 1px solid #58402c;
 }
 header nav .menu {
   display: flex;
@@ -57,6 +55,20 @@ header nav .menu .signUp {
   background-color: #5b70aa;
   border: 1px solid #2c4792;
   color: #2c4792;
+}
+@media screen and (max-width: 992px) {
+  header nav .menu {
+    display: none;
+  }
+}
+header nav #burgher-menu {
+  font-size: 50px;
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  header nav #burgher-menu {
+    display: inline-block;
+  }
 }
 
 .jumbotron {
