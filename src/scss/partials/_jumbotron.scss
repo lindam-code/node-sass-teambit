@@ -1,5 +1,4 @@
 .jumbotron {
-  display: flex;
   flex-wrap: wrap;
   @include container;
   & > div {

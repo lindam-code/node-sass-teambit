@@ -110,11 +110,11 @@ header .show {
 }
 
 .jumbotron {
-  display: flex;
   flex-wrap: wrap;
   max-width: 80%;
   min-width: 480px;
   margin: auto;
+  display: flex;
 }
 .jumbotron > div {
   flex-basis: 50%;
@@ -167,6 +167,7 @@ header .show {
   min-width: 480px;
   margin: auto;
   display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -186,4 +187,50 @@ header .show {
 }
 .people_section > div #safe-image > img {
   width: 50%;
+}
+
+.operation {
+  max-width: 80%;
+  min-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.operation > div {
+  padding: 50px 0;
+}
+.operation .image {
+  flex-basis: 50%;
+}
+@media screen and (max-width: 992px) {
+  .operation .image {
+    flex-basis: 100%;
+  }
+}
+.operation .explanation {
+  flex-basis: 30%;
+}
+@media screen and (max-width: 992px) {
+  .operation .explanation {
+    flex-basis: 100%;
+  }
+}
+.operation .explanation h2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.operation .explanation span {
+  font-size: 25px;
+  line-height: 35px;
+}
+.operation .explanation a {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2c4792;
+  margin: 25px 0;
+}
+.operation.right {
+  flex-direction: row-reverse;
 }

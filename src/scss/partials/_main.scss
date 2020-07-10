@@ -1,0 +1,77 @@
+// Sezione peolpe sfondo rosa
+.people {
+  background-color: $primary_color;
+  text-align: center;
+  padding: 25px 0;
+
+  &_section.first {
+    border-bottom: 1px solid $text_color;
+    margin-bottom: 25px;
+  }
+
+  &_section {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > div {
+      padding: 50px;
+      flex-basis: calc(100% / 3);
+      @media screen and (max-width: 992px){
+        flex-basis: calc(100%);
+      }
+      & > div {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+      }
+      #safe-image > img {
+        width: 50%;
+      }
+    }
+  }
+}
+// Fine sezione peolpe sfondo rosa
+// Sezione operation
+.operation {
+  @include container;
+  flex-wrap: wrap;
+  & > div {
+    padding: 50px 0;
+
+  }
+  .image {
+    flex-basis: 50%;
+    @media screen and (max-width: 992px) {
+      flex-basis: 100%;
+    }
+  }
+  .explanation {
+    flex-basis: 30%;
+    @media screen and (max-width: 992px) {
+      flex-basis: 100%;
+    }
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    span {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    a {
+      display: block;
+      font-size: 25px;
+      font-weight: bold;
+      color: $secondary_color;
+      margin: 25px 0;
+    }
+  }
+  &.right {
+    flex-direction: row-reverse;
+  }
+}
+
+// Fine sezione operation
