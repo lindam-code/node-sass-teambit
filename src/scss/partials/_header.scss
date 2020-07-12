@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  border-bottom: 1px solid $text_color;
+  border-bottom: $style_border;
   position: relative;
   nav {
     .menu {
@@ -14,9 +14,13 @@ header {
         position: relative;
       }
       .signUp {
+        @include buttonLayout;
         background-color: $color_button_signUp;
         border: 1px solid $secondary_color;
         color: $secondary_color;
+        img {
+          @include imgButton;
+        }
       }
       @media screen and (max-width: 992px) {
         display: none;
@@ -33,34 +37,27 @@ header {
       }
     }
     .drop-down {
-      position: absolute;
+      @include dropDownLayout;
       top: 30px;
       left: -7px;
-      background-color: white;
-      border: 1px solid $text_color;
-      padding: 10px;
-      border-radius: 5px;
-      display: none;
-      li {
-        line-height: 25px;
-      }
+      @include verticalMenu;
     }
     .show {
       display: block;
     }
   }
   .burgher-drop-down {
-    display: none;
-    position: absolute;
+    @include dropDownLayout;
     width: 100%;
     top: 73px;
-    background-color: white;
-    li {
-      line-height: 25px;
-    }
+    @include verticalMenu;
     .signUp {
+      @include buttonLayout;
       display: block;
       text-align: center;
+      img {
+        @include imgButton;
+      }
     }
   }
   .show {

@@ -5,3 +5,31 @@
   margin: auto;
   display: flex;
 }
+
+// Layout vertical menu
+@mixin verticalMenu {
+  line-height: 25px;
+}
+
+// Layout drop down menu box
+@mixin dropDownLayout {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: $style_border;
+}
+
+// Layout bottoni
+@mixin buttonLayout {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: $secondary_color;
+}
+
+@mixin imgButton {
+  width: 30px;
+  vertical-align: middle;
+}

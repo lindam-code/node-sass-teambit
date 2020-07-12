@@ -5,7 +5,7 @@
   padding: 25px 0;
 
   &_section.first {
-    border-bottom: 1px solid $text_color;
+    border-bottom: $style_border;
     margin-bottom: 25px;
   }
 
@@ -33,7 +33,8 @@
   }
 }
 // Fine sezione peolpe sfondo rosa
-// Sezione operation
+
+// Sezione operation sfondo bianco
 .operation {
   @include container;
   flex-wrap: wrap;
@@ -73,5 +74,10 @@
     flex-direction: row-reverse;
   }
 }
+// Fine sezione operation sfondo bianco
 
-// Fine sezione operation
+// Sezione get started sfondo rosa
+.get started {
+  background-color: $primary_color;
+}
+// Fine sezione get started sfondo rosa

@@ -23,17 +23,6 @@ img {
   width: 100%;
 }
 
-.button {
-  padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #2c4792;
-}
-.button img {
-  width: 30px;
-  vertical-align: middle;
-}
-
 header {
   max-width: 80%;
   min-width: 480px;
@@ -54,9 +43,17 @@ header nav .menu li {
   position: relative;
 }
 header nav .menu .signUp {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2c4792;
   background-color: #5b70aa;
   border: 1px solid #2c4792;
   color: #2c4792;
+}
+header nav .menu .signUp img {
+  width: 30px;
+  vertical-align: middle;
 }
 @media screen and (max-width: 992px) {
   header nav .menu {
@@ -76,16 +73,14 @@ header nav #burgher-menu:hover {
   }
 }
 header nav .drop-down {
+  display: none;
   position: absolute;
-  top: 30px;
-  left: -7px;
   background-color: white;
-  border: 1px solid #58402c;
   padding: 10px;
   border-radius: 5px;
-  display: none;
-}
-header nav .drop-down li {
+  border: 1px solid #58402c;
+  top: 30px;
+  left: -7px;
   line-height: 25px;
 }
 header nav .show {
@@ -94,16 +89,25 @@ header nav .show {
 header .burgher-drop-down {
   display: none;
   position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #58402c;
   width: 100%;
   top: 73px;
-  background-color: white;
-}
-header .burgher-drop-down li {
   line-height: 25px;
 }
 header .burgher-drop-down .signUp {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2c4792;
   display: block;
   text-align: center;
+}
+header .burgher-drop-down .signUp img {
+  width: 30px;
+  vertical-align: middle;
 }
 header .show {
   display: block;
@@ -136,6 +140,16 @@ header .show {
 }
 .jumbotron .left div {
   margin-top: 25px;
+}
+.jumbotron .left div .button {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2c4792;
+}
+.jumbotron .left div .button img {
+  width: 30px;
+  vertical-align: middle;
 }
 .jumbotron .left div a {
   margin-top: 10px;
@@ -233,4 +247,8 @@ header .show {
 }
 .operation.right {
   flex-direction: row-reverse;
+}
+
+.get started {
+  background-color: #fee7d1;
 }

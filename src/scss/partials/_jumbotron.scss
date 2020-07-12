@@ -20,6 +20,12 @@
     }
     div {
       margin-top: 25px;
+      .button {
+        @include buttonLayout;
+        img {
+          @include imgButton;
+        }
+      }
       a {
         margin-top: 10px;
         display: inline-block;
