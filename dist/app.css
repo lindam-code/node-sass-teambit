@@ -249,6 +249,63 @@ header .show {
   flex-direction: row-reverse;
 }
 
-.get started {
+.get_started {
   background-color: #fee7d1;
+}
+.get_started .central_wrapper {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.get_started .central_wrapper h2 {
+  font-size: 35px;
+  position: relative;
+}
+.get_started .central_wrapper h2::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/happy.svg");
+  background-size: cover;
+}
+.get_started .central_wrapper .founder_letter {
+  border: 1px solid #2c4792;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  margin: 20px;
+  position: relative;
+}
+.get_started .central_wrapper .founder_letter #quotation_marks {
+  font-size: 50px;
+  color: #2c4792;
+  position: absolute;
+  top: -35px;
+  left: 0;
+}
+.get_started .central_wrapper .founder_letter p {
+  margin: 10px 0;
+}
+.get_started .central_wrapper .founder_letter img {
+  width: 50px;
+}
+.get_started .central_wrapper .founder_letter span {
+  display: block;
+}
+.get_started .central_wrapper .founder_letter .founder_signature {
+  color: #2c4792;
+}
+.get_started .central_wrapper .button {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #2c4792;
+}
+.get_started .central_wrapper .button img {
+  width: 30px;
+  vertical-align: middle;
 }

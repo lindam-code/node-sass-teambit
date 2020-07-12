@@ -77,7 +77,60 @@
 // Fine sezione operation sfondo bianco
 
 // Sezione get started sfondo rosa
-.get started {
+.get_started {
   background-color: $primary_color;
+  .central_wrapper {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: 35px;
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/happy.svg');
+        background-size: cover;
+      }
+    }
+    .founder_letter {
+      border: 1px solid $secondary_color;
+      border-radius: 5px;
+      background-color: white;
+      padding: 15px;
+      margin: 20px;
+      position: relative;
+      #quotation_marks {
+        font-size: 50px;
+        color: $secondary_color;
+        position: absolute;
+        top: -35px;
+        left: 0;
+      }
+      p {
+        margin: 10px 0;
+      }
+      img {
+        width: 50px;
+      }
+      span {
+        display: block;
+      }
+      .founder_signature {
+        color: $secondary_color;
+      }
+    }
+    .button {
+      @include buttonLayout;
+      img {
+        @include imgButton;
+      }
+    }
+  }
 }
 // Fine sezione get started sfondo rosa
