@@ -181,7 +181,6 @@ header .show {
   min-width: 480px;
   margin: auto;
   display: flex;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -308,4 +307,35 @@ header .show {
 .get_started .central_wrapper .button img {
   width: 30px;
   vertical-align: middle;
+}
+
+footer {
+  max-width: 80%;
+  min-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+footer .footer_logo {
+  flex-basis: 30%;
+}
+footer .footer_logo img {
+  width: 30px;
+}
+footer .footer_col {
+  flex-basis: 10%;
+  margin: 0 20px;
+}
+@media screen and (max-width: 992px) {
+  footer .footer_col {
+    flex-basis: 30%;
+    margin: 0 0;
+  }
+}
+footer #name {
+  color: #2c4792;
+}
+footer .footer_col ul li {
+  line-height: 25px;
 }
